@@ -44,12 +44,12 @@ function EventExamples() {
 function App() {
 	return (
 		<>
-			<h3 className="navbar">
+			<div className="navbar">
 				<nav>
 					<NavLink to="/first-vite-react/">Home</NavLink>
 					<NavLink to="/first-vite-react/booklist">Book List</NavLink>
 				</nav>
-			</h3>
+			</div>
 			<Outlet />
 		</>
 	);

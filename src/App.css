@@ -8,23 +8,37 @@ body {
 	background-color: #1f2f3d;
 	color: #f1f1f1;
 }
+
 section {
 	max-width: 1200px;
 	margin: auto;
+}
+
+h1 {
+	text-align: center;
 }
 
 p {
 	font-weight: 200;
 }
 
+.navbar {
+	margin: 1rem 0;
+}
 .navbar nav a {
 	text-decoration: none;
 	padding: 0.5rem;
 	color: #f1f1f1;
 	transition: 0.2s;
+	padding: 0.5rem 1rem;
+	border-radius: 0.5rem;
 }
 .navbar nav a:hover {
 	color: #f1f1f17f;
+}
+
+.navbar nav a.active {
+	color: #cfcfff;
 }
 
 .cards {
