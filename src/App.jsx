@@ -1,5 +1,4 @@
-import { Outlet } from "react-router-dom";
-import BookList from "./pages/BookList";
+import { Outlet, NavLink } from "react-router-dom";
 
 // Event example
 /*
@@ -47,8 +46,8 @@ function App() {
 		<>
 			<h3 className="navbar">
 				<nav>
-					<a href="/first-vite-react/">Home</a>
-					<a href="/first-vite-react/booklist">Book List</a>
+					<NavLink to="/first-vite-react/">Home</NavLink>
+					<NavLink to="/first-vite-react/booklist">Book List</NavLink>
 				</nav>
 			</h3>
 			<Outlet />
