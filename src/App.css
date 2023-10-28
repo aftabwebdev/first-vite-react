@@ -17,6 +17,16 @@ p {
 	font-weight: 200;
 }
 
+.navbar nav a {
+	text-decoration: none;
+	padding: 0.5rem;
+	color: #f1f1f1;
+	transition: 0.2s;
+}
+.navbar nav a:hover {
+	color: #f1f1f17f;
+}
+
 .cards {
 	text-align: center;
 

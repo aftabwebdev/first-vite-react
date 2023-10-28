@@ -10,7 +10,7 @@ function BookList() {
 
 	return (
 		<>
-			<h1 style={{ textAlign: "center" }}>E-books</h1>
+			<h1>E-books</h1>
 			<div className="cards">
 				{books.map((book, index) => {
 					return (

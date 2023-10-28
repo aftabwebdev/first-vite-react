@@ -1,6 +1,8 @@
+import { Outlet } from "react-router-dom";
 import BookList from "./pages/BookList";
 
 // Event example
+/*
 function EventExamples() {
 	function handleFromInput(e) {
 		console.log(e.target);
@@ -38,13 +40,18 @@ function EventExamples() {
 		</>
 	);
 }
+*/
 
 function App() {
 	return (
 		<>
-			<section>
-				<BookList />
-			</section>
+			<h3 className="navbar">
+				<nav>
+					<a href="/first-vite-react/">Home</a>
+					<a href="/first-vite-react/booklist">Book List</a>
+				</nav>
+			</h3>
+			<Outlet />
 		</>
 	);
 }
