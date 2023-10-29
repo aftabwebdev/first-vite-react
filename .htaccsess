@@ -1,2 +1,3 @@
 RewriteEngine On
 RewriteBase /first-vite-react/
+RewriteRule ^(.*)$ index.html?url=$1 [QSA]
