@@ -1,4 +1,7 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import AppLayout from "./Layouts/AppLayout";
+import Home from "./pages/Home";
+import BookList from "./pages/BookList";
 
 // Event example
 /*
@@ -43,15 +46,14 @@ function EventExamples() {
 
 function App() {
 	return (
-		<>
-			<div className="navbar">
-				<nav>
-					<NavLink to="/first-vite-react/">Home</NavLink>
-					<NavLink to="/first-vite-react/booklist">Book List</NavLink>
-				</nav>
-			</div>
-			<Outlet />
-		</>
+		<BrowserRouter basename="/first-vite-react/">
+			<Routes>
+				<Route path="/" element={<AppLayout />}>
+					<Route index element={<Home />} />
+					<Route path="booklist" element={<BookList />} />
+				</Route>
+			</Routes>
+		</BrowserRouter>
 	);
 }
 
