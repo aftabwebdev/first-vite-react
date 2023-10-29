@@ -1,1 +1,2 @@
-
+RewriteEngine On
+RewriteBase /first-vite-react/
