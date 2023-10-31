@@ -1,4 +1,4 @@
-function Book({ number, id, title, author, image, getBook }) {
+function Book({ number, id, title, author, image, getBook, removeItems }) {
 	return (
 		<article className="card">
 			<div className="badge">
@@ -9,7 +9,8 @@ function Book({ number, id, title, author, image, getBook }) {
 			</div>
 			<h3>{title}</h3>
 			<p>{author}</p>
-			<button onClick={() => getBook(id)}>Display Title</button>
+			<button onClick={() => getBook(id)}>Display</button>
+			<button onClick={() => removeItems(id)}>Delete</button>
 		</article>
 	);
 }

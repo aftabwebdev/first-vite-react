@@ -2,6 +2,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./Layouts/AppLayout";
 import Home from "./pages/Home";
 import BookList from "./pages/BookList";
+import Counter from "./pages/Counter";
+import PracticeList from "./pages/PracticeList";
+import UseStateObject from "./pages/UseStateObject";
+import Page404 from "./pages/Page404";
 
 // Event example
 /*
@@ -51,7 +55,12 @@ function App() {
 				<Route path="/" element={<AppLayout />}>
 					<Route index element={<Home />} />
 					<Route path="booklist" element={<BookList />} />
+					<Route path="practice-list" element={<PracticeList />}>
+						<Route path="counter" element={<Counter />} />
+						<Route path="use-state-object" element={<UseStateObject />} />
+					</Route>
 				</Route>
+				<Route path="*" element={<Page404 />} />
 			</Routes>
 		</BrowserRouter>
 	);

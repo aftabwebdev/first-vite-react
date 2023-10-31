@@ -1,15 +1,11 @@
-import { Outlet, NavLink } from "react-router-dom";
+import { Outlet } from "react-router-dom";
+import Navbar from "../components/Navbar";
 
 function AppLayout() {
 	return (
 		<>
 			<header>
-				<div className="navbar">
-					<nav>
-						<NavLink to="/">Home</NavLink>
-						<NavLink to="/booklist">Book List</NavLink>
-					</nav>
-				</div>
+				<Navbar />
 			</header>
 			<main>
 				<Outlet />

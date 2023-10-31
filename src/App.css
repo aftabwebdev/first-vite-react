@@ -3,6 +3,18 @@
 	--font-nunito: "Nunito", sans-serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+span {
+	cursor: default;
+}
+
 body {
 	font-family: var(--font-nunito);
 	background-color: #1f2f3d;
@@ -22,10 +34,36 @@ p {
 	font-weight: 200;
 }
 
+a {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+button {
+	padding: 0.5rem;
+	background-color: #ffffff07;
+	color: #f1f1f1;
+	border: 1px solid #ffffff3f;
+	border-radius: 0.5rem;
+}
+
+button:not(:last-child) {
+	margin-right: 0.5rem;
+}
+
+button:hover {
+	background-color: #ffffff10;
+}
+
+button:active {
+	background-color: #ffffff20;
+}
+
 .navbar {
 	margin: 1rem 0;
 }
-.navbar nav a {
+.navbar nav a,
+.navbar nav span {
 	text-decoration: none;
 	padding: 0.5rem;
 	color: #f1f1f1;
@@ -37,7 +75,8 @@ p {
 	color: #f1f1f17f;
 }
 
-.navbar nav a.active {
+.navbar nav a.active,
+.practice-list nav a.active {
 	color: #cfcfff;
 }
 
@@ -63,7 +102,6 @@ p {
 	position: absolute;
 	top: -0.25rem;
 	right: 1rem;
-	font-size: 1.2rem;
 	color: #222;
 }
 
@@ -92,6 +130,7 @@ imput {
 	margin-bottom: 3rem;
 }
 
+/* media */
 @media screen and (max-width: 960px) {
 	section {
 		margin: 0 1rem;
