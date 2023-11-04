@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { books as data } from "../data/books";
 import Book from "../components/Book";
+import image1 from "../assets/books/Judgment-Prey.jpg";
 
 function BookList() {
 	const [books, setBooks] = useState(data);
@@ -10,17 +11,38 @@ function BookList() {
 		setBooks(book);
 	}
 
+	function addBook() {
+		setBooks([
+			...books,
+			{
+				id: "216-5d5",
+				title: "Judgment Prey",
+				author: "John Sandford",
+				image: image1,
+			},
+		]);
+	}
+
 	const removeItems = (id) => {
 		const newBooks = books.filter((book) => book.id !== id);
 		setBooks(newBooks);
 	};
-	const clearAllItems = (first) => {
-		second;
+
+	const updateItem = (id) => {
+		const newBooks = books.filter((book) => book.id === id);
+		setBooks([...books, { ...newBooks, author: "Aftab Ahmed" }]);
+		console.log(newBooks);
 	};
 
 	return (
 		<>
 			<h1>E-books</h1>
+			<div style={{ marginBottom: "1rem" }}>
+				<button onClick={addBook}>Add</button>
+				<button style={{ float: "right" }} onClick={updateItem}>
+					Update
+				</button>
+			</div>
 			<div className="cards">
 				{books.map((book, index) => {
 					return (

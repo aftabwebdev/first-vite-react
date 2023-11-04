@@ -20,12 +20,15 @@ const Counter = () => {
 		setCount(count + 1);
 	};
 	return (
-		<div style={css.root}>
-			<p style={css.p}>{count}</p>
-			<button style={css.btn} type="button" onClick={handleClick}>
-				Increse
-			</button>
-		</div>
+		<>
+			<h1>Counter</h1>
+			<div style={css.root}>
+				<p style={css.p}>{count}</p>
+				<button style={css.btn} type="button" onClick={handleClick}>
+					Increse
+				</button>
+			</div>
+		</>
 	);
 };
 export default Counter;

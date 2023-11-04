@@ -130,7 +130,27 @@ imput {
 	margin-bottom: 3rem;
 }
 
+/* practice list */
+
+.practice-list .menu {
+	cursor: pointer;
+	margin-right: 0.5rem;
+}
+.practice-list nav {
+	display: none;
+	padding: 0.5rem 0;
+	background-color: #2f3f4d;
+	border-radius: 0.5rem;
+}
+.practice-list nav ul {
+	list-style-type: none;
+}
+.practice-list:hover nav {
+	display: block;
+}
+
 /* media */
+
 @media screen and (max-width: 960px) {
 	section {
 		margin: 0 1rem;

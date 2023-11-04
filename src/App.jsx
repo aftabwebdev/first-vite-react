@@ -6,6 +6,7 @@ import Counter from "./pages/Counter";
 import PracticeList from "./pages/PracticeList";
 import UseStateObject from "./pages/UseStateObject";
 import Page404 from "./pages/Page404";
+import Products from "./pages/Products";
 
 // Event example
 /*
@@ -58,6 +59,7 @@ function App() {
 					<Route path="practice-list" element={<PracticeList />}>
 						<Route path="counter" element={<Counter />} />
 						<Route path="use-state-object" element={<UseStateObject />} />
+						<Route path="products" element={<Products />} />
 					</Route>
 				</Route>
 				<Route path="*" element={<Page404 />} />
