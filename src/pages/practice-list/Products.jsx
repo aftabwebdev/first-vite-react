@@ -1,6 +1,8 @@
-### Proper way to use useEffect
+import { useState, useEffect } from "react";
+import Product from "../../components/Product";
 
-```js
+const api = "https://aftabwebdev.github.io/api/products/products.json";
+
 const Products = () => {
 	const [isLoding, setIsLoding] = useState(true);
 	const [isError, setIsError] = useState(false);
@@ -29,7 +31,6 @@ const Products = () => {
 		}, 3000);
 	}, []);
 
-	// Conditions must be used after useEffect hook while useing creste-react-app.
 	if (isLoding) {
 		return <h2 style={{ textAlign: "center" }}>Loding...</h2>;
 	}
@@ -40,13 +41,14 @@ const Products = () => {
 	return (
 		<>
 			<h1>Products</h1>
-			<div className="cards">
-				{products.map((product, index) => {
-					return <Product {...product} key={product.id} number={index} />;
-				})}
-			</div>
+			{products && (
+				<div className="cards">
+					{products.map((product, index) => {
+						return <Product {...product} key={product.id} number={index} />;
+					})}
+				</div>
+			)}
 		</>
 	);
 };
 export default Products;
-```

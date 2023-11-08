@@ -21,6 +21,11 @@ const PracticeList = () => {
 						<li>
 							<NavLink to="/practice-list/products">Products</NavLink>
 						</li>
+						<li>
+							<NavLink to="/practice-list/short-circuit">
+								Short Circuit Overview
+							</NavLink>
+						</li>
 					</ul>
 				</nav>
 			</div>

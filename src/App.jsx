@@ -2,11 +2,12 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./Layouts/AppLayout";
 import Home from "./pages/Home";
 import BookList from "./pages/BookList";
-import Counter from "./pages/Counter";
-import PracticeList from "./pages/PracticeList";
+import Counter from "./pages/practice-list/Counter";
+import PracticeList from "./pages/practice-list/PracticeList";
 import UseStateObject from "./pages/UseStateObject";
 import Page404 from "./pages/Page404";
-import Products from "./pages/Products";
+import Products from "./pages/practice-list/Products";
+import ShortCircuit from "./pages/practice-list/ShortCircuit";
 
 // Event example
 /*
@@ -60,6 +61,7 @@ function App() {
 						<Route path="counter" element={<Counter />} />
 						<Route path="use-state-object" element={<UseStateObject />} />
 						<Route path="products" element={<Products />} />
+						<Route path="short-circuit" element={<ShortCircuit />} />
 					</Route>
 				</Route>
 				<Route path="*" element={<Page404 />} />
