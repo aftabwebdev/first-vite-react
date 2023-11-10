@@ -26,6 +26,11 @@ const PracticeList = () => {
 								Short Circuit Overview
 							</NavLink>
 						</li>
+						<li>
+							<NavLink to="/practice-list/login-logout-condition">
+								Login Logout Condition
+							</NavLink>
+						</li>
 					</ul>
 				</nav>
 			</div>

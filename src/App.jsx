@@ -8,6 +8,7 @@ import UseStateObject from "./pages/UseStateObject";
 import Page404 from "./pages/Page404";
 import Products from "./pages/practice-list/Products";
 import ShortCircuit from "./pages/practice-list/ShortCircuit";
+import LoginLogoutCondition from "./pages/practice-list/LoginLogoutCondition";
 
 // Event example
 /*
@@ -62,6 +63,10 @@ function App() {
 						<Route path="use-state-object" element={<UseStateObject />} />
 						<Route path="products" element={<Products />} />
 						<Route path="short-circuit" element={<ShortCircuit />} />
+						<Route
+							path="login-logout-condition"
+							element={<LoginLogoutCondition />}
+						/>
 					</Route>
 				</Route>
 				<Route path="*" element={<Page404 />} />
