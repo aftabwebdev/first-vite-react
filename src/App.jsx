@@ -1,6 +1,17 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AppLayout from "./Layouts/AppLayout";
-import Home from "./pages/Home";
+import {
+	Home,
+	BookList,
+	Page404,
+	UseStateObject,
+	PracticeList,
+	Counter,
+	Products,
+	ShortCircuit,
+	LoginLogoutCondition,
+} from "./pages";
+/*
 import BookList from "./pages/BookList";
 import Counter from "./pages/practice-list/Counter";
 import PracticeList from "./pages/practice-list/PracticeList";
@@ -9,47 +20,8 @@ import Page404 from "./pages/Page404";
 import Products from "./pages/practice-list/Products";
 import ShortCircuit from "./pages/practice-list/ShortCircuit";
 import LoginLogoutCondition from "./pages/practice-list/LoginLogoutCondition";
-
-// Event example
-/*
-function EventExamples() {
-	function handleFromInput(e) {
-		console.log(e.target);
-		console.log(e.target.name);
-		console.log(e.target.value);
-		console.log("Handle Form Input");
-	}
-
-	function handleButtonClick() {
-		alert("Handle Button Click");
-	}
-
-	function handleFromSubmission(e) {
-		e.preventDefault();
-		console.log("Handle Form Submission");
-	}
-
-	return (
-		<>
-			<form action="" onSubmit={handleFromSubmission}>
-				<h2>Typical Form</h2>
-				<input
-					type="text"
-					name="example"
-					style={{ margin: "1rem 0" }}
-					onClick={handleFromInput}
-				/>
-				<button type="submit">Submit</button>
-				<div>
-					<button type="button" onClick={handleButtonClick}>
-						Click me
-					</button>
-				</div>
-			</form>
-		</>
-	);
-}
 */
+// Event example
 
 function App() {
 	return (

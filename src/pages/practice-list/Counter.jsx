@@ -15,21 +15,18 @@ const Counter = () => {
 	};
 
 	const [count, setCount] = useState(0);
-	const [color, setColor] = useState("red");
 
 	useEffect(() => {
 		console.log(count);
-		console.log("hello there");
 	}, []);
 
 	const handleClick = () => {
 		setCount(count + 1);
-		setColor("blue");
 	};
 
 	return (
 		<>
-			<h1 style={{ color }}>Counter</h1>
+			<h1>Counter</h1>
 			<div style={css.root}>
 				<p style={css.p}>{count}</p>
 				<button style={css.btn} type="button" onClick={handleClick}>

@@ -148,22 +148,31 @@ imput {
 }
 
 /* practice list */
-
-.practice-list .menu {
-	cursor: pointer;
-	margin-right: 0.5rem;
+.practice-list {
+	position: relative;
 }
-.practice-list nav {
-	display: none;
-	padding: 0.5rem 0;
-	background-color: #2f3f4d;
+.practice-list:hover ul {
+	visibility: visible;
+	opacity: 1;
+}
+.practice-list ul {
+	visibility: hidden;
+	opacity: 0;
+	width: 200px;
+	padding: 0;
+	background-color: #1f2f3d;
+	border: 1px solid #ffffff7f;
 	border-radius: 0.5rem;
-}
-.practice-list nav ul {
 	list-style-type: none;
+	position: absolute;
+	left: 1rem;
+	top: 50%;
+	z-index: 10;
+	transition: opacity 400ms ease;
 }
-.practice-list:hover nav {
-	display: block;
+
+.practice-list ul li {
+	padding: 0.5rem 0;
 }
 
 /* media */
