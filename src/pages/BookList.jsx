@@ -15,10 +15,8 @@ function BookList() {
 		setBooks([
 			...books,
 			{
-				id: "216-5d5",
-				title: "Judgment Prey",
-				author: "John Sandford",
-				image: image1,
+				id: "book-" + (books.length + 1),
+				title: "Unknown",
 			},
 		]);
 	}
