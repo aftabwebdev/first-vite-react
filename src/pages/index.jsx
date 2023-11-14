@@ -7,6 +7,7 @@ import Counter from "./practice-list/Counter";
 import Products from "./practice-list/Products";
 import LoginLogoutCondition from "./practice-list/LoginLogoutCondition";
 import ShortCircuit from "./practice-list/ShortCircuit";
+import FormSubmission from "./practice-list/FormSubmission";
 
 export {
 	Home,
@@ -18,4 +19,5 @@ export {
 	Products,
 	LoginLogoutCondition,
 	ShortCircuit,
+	FormSubmission,
 };

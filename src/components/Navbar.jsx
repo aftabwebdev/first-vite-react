@@ -32,6 +32,11 @@ const Navbar = () => {
 						<li>
 							<NavLink to="/practice-list/new">New</NavLink>
 						</li>
+						<li>
+							<NavLink to="/practice-list/form-submission">
+								Form Submission
+							</NavLink>
+						</li>
 					</ul>
 				</span>
 			</nav>

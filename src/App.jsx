@@ -10,6 +10,7 @@ import {
 	Products,
 	ShortCircuit,
 	LoginLogoutCondition,
+	FormSubmission,
 } from "./pages";
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
 							path="login-logout-condition"
 							element={<LoginLogoutCondition />}
 						/>
+						<Route path="form-submission" element={<FormSubmission />} />
 					</Route>
 				</Route>
 				<Route path="*" element={<Page404 />} />
