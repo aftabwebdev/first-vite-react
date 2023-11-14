@@ -11,17 +11,6 @@ import {
 	ShortCircuit,
 	LoginLogoutCondition,
 } from "./pages";
-/*
-import BookList from "./pages/BookList";
-import Counter from "./pages/practice-list/Counter";
-import PracticeList from "./pages/practice-list/PracticeList";
-import UseStateObject from "./pages/UseStateObject";
-import Page404 from "./pages/Page404";
-import Products from "./pages/practice-list/Products";
-import ShortCircuit from "./pages/practice-list/ShortCircuit";
-import LoginLogoutCondition from "./pages/practice-list/LoginLogoutCondition";
-*/
-// Event example
 
 function App() {
 	return (
